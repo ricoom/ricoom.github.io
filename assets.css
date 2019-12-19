@@ -1,0 +1,33 @@
+#main{
+width: auto;
+max-height: auto;
+background-color:rgb(20,20,20);
+}
+#title{
+	color: white;
+   text-align: center;
+}
+#img-div{
+	background-color: white;
+	display: block;
+margin-left: auto;
+margin-right: auto;
+	width: 500px;
+	height: 500px;
+	text-align: center;
+	padding: 30px 30px;
+}
+#image{
+max-width:100%;
+display: block;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+#tribute-info{
+	color: white;
+	text-align: center;
+	padding: 10px 200px;
+
+}
