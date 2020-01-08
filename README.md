@@ -1,2 +1,2 @@
 # ricoom.github.io
-ics nandi tribute page
+RICCOTECH WEB PAGE
