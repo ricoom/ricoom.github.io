@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,25 +16,34 @@
 
 	<div class="container-fluid">
 	<header id="header">
-				<div class="navbar">
-		<div class="row">
-			<div class="navbar-brand" id="nav-bar">
-				<img src="images/my_logo.png" id="header-img" class="col-sm-3">
-				</div>
-				<div class="nav-item">
-					<div class="navbar-text">
-					<ul class="row">
-						<a href="#" class="nav-link">Home</a>
-						<a href="https://web.facebook.com/?ref=tn_tnmn" class="nav-link">About</a>
-						<a href="portfolio.html" class="nav-link">portfolio</a>
-					</ul>
-				</div>
-				</div>
-			
+		<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand">
+  	<img src="images/my_logo.png" id="header-img" class="col-sm-3">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-		</div>
-					
-</div>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://web.facebook.com/?ref=tn_tnmn">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="portfolio.html">Portfolio</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- navend -->
 </header>
 <div class="row">
 	<div class="col-md-3">
