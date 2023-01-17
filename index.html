@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <div id="header">
+    <div class="card" id="header show">
         <div class="container">
             <nav>
                 <img src="/images/logo.png" alt="" class="logo">
@@ -20,7 +20,6 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://funhubkenya.blogspot.com/">Blog</a></li>
                     <i class="fa fa-close" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fa fa-bars" onclick="openMenu()"></i>
@@ -32,7 +31,7 @@
         </div>
     </div>
 <!-- about -->
-<div id="about">
+<div class="card" id="about ">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
@@ -82,7 +81,7 @@
 
 </div>
 <!-- services -->
-<div id="services">
+<div class="card" id="services">
     <div class="container">
         <h1 class="sub-title">My services</h1>
         <div class="services-list">
@@ -111,7 +110,7 @@
     </div>
 </div>
 <!-- portfolio -->
-<div id="portfolio">
+<div class="card" id="portfolio">
     <div class="container">
         <h1 class="sub-title">My work</h1>
         <div class="work-list">
@@ -144,7 +143,7 @@
     </div>
 </div>
 <!-- contact -->
-<div id="contact">
+<div class="card" id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -215,6 +214,7 @@
     e.preventDefault()
     sendBtn.style.background="blue"
     sendBtn.innerText="sending.."
+    
           
    
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
@@ -230,6 +230,18 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
+</script>
+<script>
+    const cards=document.querySelectorAll('.card')
+    const observer=new IntersectionObserver(entries=>{
+       entries.forEach(entry=>{
+        entry.target.classList.toggle("show",entry.isIntersecting)
+       })
+    })
+    cards.forEach(card=>{
+observer.observe(card);
+    })
+    
 </script>
 </body>
 </html>
