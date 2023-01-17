@@ -44,6 +44,15 @@ nav ul li a{
     position: relative;
 
 }
+.card{
+opacity: 0;
+transform: translateX(40px);
+transition: 0.8s;
+}
+.card.show{
+    transform: translateX(0);
+    opacity: 1;
+}
 nav ul li a::after{
     content: '';
     width: 0;
